@@ -15,7 +15,7 @@ export const AppDataSource = new DataSource({
     ...MYSQLConfig,
     type: "mysql",
     synchronize: true,
-    logging: false,
+    logging: true,
     entities: ["src/entities/**/*.entity{.ts,.js}"],
     migrations: ["src/migrations/**/*{.ts,.js}"],
     subscribers: ["src/subscribers/**/*{.ts,.js}"]
